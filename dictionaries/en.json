@@ -1,0 +1,18 @@
+{
+    "navigation": {
+           "home": "Home",
+           "about": "About Us"
+       },
+    "page": {
+       "home": {
+         "title": "Home",
+         "description": "Hello there!",
+         "explanation": "On this page, the adventure starts for every visitor.",
+         "howto": "Instructions to implement internationalization."
+       },
+       "about": {
+         "title": "About Us",
+         "description": "A bit about us!"
+       }
+    }
+   }
