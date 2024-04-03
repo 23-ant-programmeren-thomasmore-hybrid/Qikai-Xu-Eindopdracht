@@ -1,9 +1,20 @@
 import Image from "next/image";
-import { getDictionary } from '../../dictionaries'
-import {Locale} from "../../../i18n.config";
+import { getDictionary } from "../../dictionaries";
+import { Locale } from "../../../i18n.config";
+import Link from "next/link";
+import ScrollToTopPage from "@/components/scrollReset";
+import About from "./about/page";
+import Gallery from "./gallery/page";
+import Projects from "./projects/page";
 
-export default async function Home({ params: { lang } }: {params: {lang: Locale}}) {
-  const dict = await getDictionary(lang) // nl
+import vercel from '/public/vercel.svg'
+
+export default async function Home({
+  params: { lang },
+}: {
+  params: { lang: Locale };
+}) {
+  const dict = await getDictionary(lang); // nl
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
@@ -20,7 +31,7 @@ export default async function Home({ params: { lang } }: {params: {lang: Locale}
           >
             By{" "}
             <Image
-              src="/vercel.svg"
+              src={vercel}
               alt="Vercel Logo"
               className="dark:invert"
               width={100}
@@ -32,10 +43,29 @@ export default async function Home({ params: { lang } }: {params: {lang: Locale}
       </div>
 
       <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <h1>THE START OF QIKAI`S PROJECT |  20-03-2024</h1>
+        {/* <h1>THE START OF QIKAI`S PROJECT | 20-03-2024</h1> */}
         <h2>{dict.page.home.description}</h2>
-      <h3>{dict.page.home.explanation}</h3>
-      <p>{dict.page.home.howto}</p>
+        <h3>{dict.page.home.explanation}</h3>
+        <p>{dict.page.home.howto}</p>
+      </div>
+
+      <div>
+        <div id="first-section"><About
+            params={{
+              lang: lang,
+            }}
+          /></div>
+        <main id="second-section">
+        <Projects
+            params={{
+              lang: lang,
+            }}
+          />
+        </main>
+        <div id="first-section"><Gallery
+            params={{
+              lang: lang,
+            }}/></div>
       </div>
 
       <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
@@ -107,6 +137,8 @@ export default async function Home({ params: { lang } }: {params: {lang: Locale}
           </p>
         </a>
       </div>
+
+      <ScrollToTopPage />
     </main>
   );
 }

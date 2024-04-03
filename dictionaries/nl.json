@@ -13,6 +13,15 @@
     "about": {
       "title": "Over ons",
       "description": "Een beetje over ons!"
+    },
+    "projects": {
+      "title": "Projecten",
+      "description": "Mijn projecten!"
+    },
+    "gallery": {
+      "title": "Gallerij",
+      "description": "Mijn gallerij met samengestelde foto's!"
     }
+    
  }
 }

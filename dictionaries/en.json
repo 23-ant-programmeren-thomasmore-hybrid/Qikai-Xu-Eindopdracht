@@ -13,6 +13,14 @@
        "about": {
          "title": "About Us",
          "description": "A bit about us!"
-       }
+       },
+       "projects": {
+        "title": "Projects",
+        "description": "My projects!"
+      },
+      "gallery": {
+        "title": "Gallery",
+        "description": "My gallery with curated photos!"
+      }
     }
    }
