@@ -1,27 +1,162 @@
 {
  "navigation": {
         "home": "Home",
-        "about": "Over ons"
-    },
+        "about": "Over mij",
+        "education": "Onderwijs",
+        "projects": "Projecten",
+        "gallery": "Gallerij",
+        "others": "Anderen",
+        "contact": "Contact",
+        "settings": "Instellingen"
+ },
  "page": {
     "home": {
       "title": "Home",
-      "description": "Hallo daar!",
-      "explanation": "Op deze pagina begint het avontuur voor elke bezoeker.",
+      "description":"Hallo daar!",
+      "explanation":"Student programmeren aan de Thomas More Hogeschool van Toegepaste Wetenschapen. Ik wil graag meer leren over front-end talen en het verband en de relatie tussen back- en frontend.",
       "howto": "Instructies om internationalizatie te implementeren."
     },
     "about": {
-      "title": "Over ons",
-      "description": "Een beetje over ons!"
+      "title": "Over mij",
+      "description":"Een beetje over mij!",
+      "introduction1":"Wanneer je mij aanspreekt, merk je dat ook dat ik niet uit België kom. Ik woon hier al bijna 8 jaar en heb daarvoor 15 jaar op verschillende plekken in Nederland gewoond, maar zelfs met al die jaren hier heb ik het Vlaams (nog) niet overgenomen. Wel leer ik meer en meer de Belgische vocabulair.",
+      "introduction2":"1 ding dat altijd hetzelfde blijft of op een manier altijd anders, is hoe mensen mijn naam uitspreken wanneer zij mij voor het eerste ontmoeten. Om het wat gemakkelijker te maken wanneer het komt tot mijn naam, is het onthouden van de Engelse uitspraak van 'T.K.' voldoende. Toch hoor ik nog altijd verschillende creatieve manieren van hoe mensen die mij al wat langer kennen.",
+      "introduction3":"Hieronder staan een paar technologieën waar ik al bekend mee ben en mijn kennis over blijf uitbreiden:"
+    },
+    "education":{
+      "title": "Onderwijs",
+      "description":"Wat ik heb gestudeerd",
+      "explanation1":"Qua studies deed ik hiervoor PBSO, informatica en Engels aan de Karel de Grote - Hogeschool te Antwerpen. Deze studie ben ik begonnen in 2018 en enkele jaren daarna geëindigd. Tijdens deze periode heb ik zeer veel geleerd op het gebied van lesgeven, hoe je met jongeren om moet gaan, hoe je je naast professioneel ook informeel kan zijn en nog vele andere tips en tricks. En nu? Programmeren!",
+      "explanation2":"Hieronder vindt u mijn verschillende opleidingen die ik in België heb gevolgd:",
+      "study1":{
+        "title": "Graduaat Programmeren",
+        "school":"Thomas More Hogeschool van Toegepaste Wetenschapen",
+        "year":"2022 - Present",
+        "skill1":"Leerde meer dan 10 verschillende technologieën, waaronder, maar niet beperkt tot Next.Js, JavaScript, HTML, CSS en VirtualBox.",
+        "skill2":"Bestudeerde elk aspect van een full-stack ontwikkelaar in de klas, op het werk en tijdens conferenties over zowel het leven als het werk zelf.",
+        "skill3":"Verfijnde het werken in groepen met specifieke workflows gedurende meerdere weken en tijdens een proefproject."
+      },
+      "study2":{
+        "title": "Leraar Secundair Onderwijs",
+        "school":"Karel de Grote Hogeschool",
+        "year":"2018 - 2022",
+        "skill1":"Verbeterde mijn vaardigheden om lange uren te maken en onder druk te werken tijdens verschillende stages waar onmiddellijke flexibiliteit en aanpassingsvermogen essentieel waren.",
+        "skill2":"Schaafde mijn expertise bij in het maken van aantekeningen en verslagen tijdens casestudies, vergaderingen, observatie- en feedbackmomenten.",
+        "skill3":"Leerde hoe ik informatie op meerdere manieren moet communiceren naar een divers publiek van verschillende leeftijdsgroepen en hoe ik ze moet aansturen."
+      },
+      "study3":{
+        "title": "Informaticabeheer",
+        "school":"KTA Da Vinci Edegem",
+        "year":"2016 - 2018",
+        "skill1":"Bestuderde de ins en outs van een computer en zijn randapparatuur.",
+        "skill2":"Behaalde programmeervaardigheden in talen als HTML, Java, CSS, PHP en SQL.",
+        "skill3":"Programmeerde een webshop vanaf de grond af met de bovenstaande talen met inkoop- en mailingopties."
+      },
+      "study4":{
+        "title": "Handel",
+        "school":"KTA Da Vinci Edegem",
+        "year":"2014 - 2016",
+        "skill1":"Oefende en voerde elke stap in het opstarten van een bedrijf uit met 4 anderen, van het opzetten van een bedrijfsidee tot het verpakken van een product voor levering.",
+        "skill2":"Leerde hoe je de boekhouding van meerdere schijnbedrijven doet met praktische hulpmiddelen en online sites zoals Vlajo.",
+        "skill3":"Verbeterde mijn lezen, schrijven, spreken en begrijpen in 3 talen."
+      },
+      "study5":{
+        "title": "Economie-Wiskunde",
+        "school":"OLVE Mortsel",
+        "year":"2014 - 2014",
+        "skill1":"Raakte vertrouwd met alles wat België is.",
+        "skill2":"Leerde over de verschillende schoolsystemen, hun doel en moeilijkheidsgraad.",
+        "skill3":"Verbeterde in mijn vaardigheden in het socialiseren en in contact komen met mensen van elk niveau van het schoolsysteem."
+      }
     },
     "projects": {
       "title": "Projecten",
-      "description": "Mijn projecten!"
+      "description":"Wat ik heb gemaakt",
+      "explanation1":"Doorheen mijn studies heb ik een aantal projecten en groepsopdrachten gerealiseerd. Hiervan zijn de meest recente projecten en de projecten waar ik het meeste tijd in heb gestoken.",
+      "explanation2":"Hiermee kan je op een gemakkelijkere manier websites bouwen en gebruiken voor educatieve of informele doeleindes.",
+      "project1":{
+        "title": "Snapping S.M.A.K",
+        "description":"Dit project was een groepsinspanning die we samen met 4 anderen deden. We kregen verschillende front- en backend-taken toegewezen en er werd van ons verwacht dat we het als een echt project zouden behandelen en dat we onze voortgang zouden bijhouden."
+      },
+      "project2":{
+        "title": "Frituur(snack)",
+        "description":"Een uitdagend project met als doel een kleine database van lokale snackbars in en rond Antwerpen met hun selectie snacks. Het bevatte ook informatie over allergieën en religie rond elke snack."
+      }
+    },
+    "other": {
+      "title": "Anderen",
+      "description":"Wat ik ook heb gemaakt",
+      "explanation1":"De onderstaande websites zijn of gemaakt met behulp van een online tool genaamd Webnode of vanaf de grond af geprogrammeerd met verschillende talen.",
+      "project1":{
+        "title": "Portfolio",
+        "subject":"User Interfaces",
+        "description":"Mijn eerste simpele portfolio webapplicatie die ik heb gemaakt.",
+        "language1":"HTML",
+        "language2":"CSS",
+        "language3":"Bootstrap"
+      },
+      "project2":{
+        "title": "Fotogallerij",
+        "subject":"Responsive Design",
+        "description":"Een responsive website gemaakt rondom mijn hobby als fotograaf.",
+        "language1":"HTML",
+        "language2":"CSS",
+        "language3":"Bootstrap"
+      },
+      "project3":{
+        "title": "ILA Web",
+        "subject":"Projecten in het werkveld",
+        "description":"Een gemoderniseerde schaalbare versie van een webapplicatie die voorheen voor de klantafdeling werd gebruikt.",
+        "language1":"Angular",
+        "language2":".NET Framework",
+        "language3":"C#"
+      },
+      "project4":{
+        "title": "Portfolio",
+        "subject":"Multimedia",
+        "description":"Mijn eerste portfoliowebsite gemaakt met een online tool.",
+        "language1":"Webnode",
+        "language2":"",
+        "language3":""
+      },
+      "project5":{
+        "title": "Food & Drinks",
+        "subject":"Civilization 2",
+        "description":"Website gemaakt om een dag in en rond Londen over hun eetcultuur te plannen en uit te voeren.",
+        "language1":"Webnode",
+        "language2":"",
+        "language3":""
+      },
+      "project6":{
+        "title": "Toekomstig Budgetteren",
+        "subject":"Economie",
+        "description":"Een cursus van vier lessen over het leren budgetteren met eenvoudig te volgen onderwerpen en praktische stappen.",
+        "language1":"Webnode",
+        "language2":"",
+        "language3":""
+      }
     },
     "gallery": {
       "title": "Gallerij",
-      "description": "Mijn gallerij met samengestelde foto's!"
+      "description":"Wat ik heb gecreëerd",
+      "explanation1":"Ik maak niet graag foto's van mezelf, dus hier zal je er waarschijnlijk ook niet veel vinden.. Wat ik wel doe, is foto's maken en van alles wat. Mensen op straat, flora naast de straat, fauna tegenover de straat en de straat zelf. Je kan me bijna wekelijks vinden ergens in stad Antwerpen met mijn camera in hand en gefocust op het vinden van nieuwe of andere composities."
+    },
+    "contact": {
+      "title": "Contact",
+      "description":"Heb je een vraag?",
+      "explanation1":"Liever contact met mij opnemen voor een groepsproject of een paar vragen beantwoord krijgen? Vul gerust onderstaand formulier in.",
+      "username":"Gebruikersnaam",
+      "email":"Emailadres",
+      "message":"Bericht",
+      "submit":"Indienen"
     }
-    
+ },
+"component": {
+    "greetings":{
+      "greeting1":"Hallo, mijn naam is",
+      "greeting2":"Hi, dit is",
+      "greeting3":"Gegroet, u mag me",
+      "greeting31":"noemen"
+  }
  }
 }

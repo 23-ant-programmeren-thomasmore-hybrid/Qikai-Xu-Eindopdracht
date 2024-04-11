@@ -112,19 +112,6 @@ export default async function Header({ lang }: { lang: Locale }) {
               </Tooltip>
               <Tooltip>
                 <TooltipTrigger asChild>
-                  <CustomLink
-                    href="#gallery-section"
-                    lang={lang}
-                    className="flex h-9 w-9 items-center justify-center rounded-lg focus:bg-amber-100 focus:text-stone-800 text-amber-100 hover:text-stone-800 md:h-8 md:w-8"
-                  >
-                    <BookImage className="h-5 w-5" />
-                    <span className="sr-only">{navigation.gallery}</span>
-                  </CustomLink>
-                </TooltipTrigger>
-                <TooltipContent side="right">{navigation.gallery}</TooltipContent>
-              </Tooltip>
-              <Tooltip>
-                <TooltipTrigger asChild>
                 <CustomLink
                     href="#other-section"
                     lang={lang}
@@ -135,6 +122,19 @@ export default async function Header({ lang }: { lang: Locale }) {
                   </CustomLink>
                 </TooltipTrigger>
                 <TooltipContent side="right">{navigation.others}</TooltipContent>
+              </Tooltip>
+              <Tooltip>
+                <TooltipTrigger asChild>
+                  <CustomLink
+                    href="#gallery-section"
+                    lang={lang}
+                    className="flex h-9 w-9 items-center justify-center rounded-lg focus:bg-amber-100 focus:text-stone-800 text-amber-100 hover:text-stone-800 md:h-8 md:w-8"
+                  >
+                    <BookImage className="h-5 w-5" />
+                    <span className="sr-only">{navigation.gallery}</span>
+                  </CustomLink>
+                </TooltipTrigger>
+                <TooltipContent side="right">{navigation.gallery}</TooltipContent>
               </Tooltip>
               <Tooltip>
                 <TooltipTrigger asChild>
@@ -157,9 +157,9 @@ export default async function Header({ lang }: { lang: Locale }) {
                 <TooltipTrigger asChild>
                   <Link
                     href="#"
-                    className="flex h-9 w-9 items-center justify-center rounded-lg  focus:bg-amber-100 focus:text-stone-800 text-amber-100 hover:text-stone-800 md:h-8 md:w-8"
+                    className="group flex h-9 w-9 items-center justify-center rounded-lg  focus:bg-amber-100 focus:text-stone-800 text-amber-100 hover:text-stone-800 md:h-8 md:w-8"
                   >
-                    <Settings className="h-5 w-5 " />
+                    <Settings className="h-5 w-5 group-focus:animate-spin" />
                     <span className="sr-only">{navigation.settings}</span>
                   </Link>
                 </TooltipTrigger>
@@ -178,7 +178,7 @@ export default async function Header({ lang }: { lang: Locale }) {
                 <Button
                   size="icon"
                   variant="destructive"
-                  className="sm:hidden bg-red-800/50 offset"
+                  className="sm:hidden bg-red-800/50 offset text-amber-100"
                 >
                   <PanelRight className="h-5 w-5 text-amber-100" />
                   <span className="sr-only">Toggle Menu</span>
@@ -219,20 +219,20 @@ export default async function Header({ lang }: { lang: Locale }) {
                     <p className={roboto_mono.className}>{navigation.projects}</p>
                   </CustomLink>
                   <CustomLink
-                    href="#gallery-section"
-                    lang={lang}
-                    className="flex items-center gap-4 px-2.5 text-amber-100 hover:text-stone-800 focus:text-stone-800"
-                  >
-                    <BookImage className="h-5 w-5 active:text-foreground" />
-                    <p className={roboto_mono.className}>{navigation.gallery}</p>
-                  </CustomLink>
-                  <CustomLink
                     href="#other-section"
                     lang={lang}
                     className="flex items-center gap-4 px-2.5 text-amber-100 hover:text-stone-800 focus:text-stone-800"
                   >
                     <PackageOpen className="h-5 w-5 active:text-foreground" />
                     <p className={roboto_mono.className}>{navigation.others}</p>
+                  </CustomLink>
+                  <CustomLink
+                    href="#gallery-section"
+                    lang={lang}
+                    className="flex items-center gap-4 px-2.5 text-amber-100 hover:text-stone-800 focus:text-stone-800"
+                  >
+                    <BookImage className="h-5 w-5 active:text-foreground" />
+                    <p className={roboto_mono.className}>{navigation.gallery}</p>
                   </CustomLink>
                   <CustomLink
                     href="#contact-section"
@@ -245,9 +245,9 @@ export default async function Header({ lang }: { lang: Locale }) {
       
                   <Link
                     href="#"
-                    className="absolute bottom-6 flex items-center gap-4 px-2.5 text-amber-100 hover:text-stone-800 focus:text-stone-800"
+                    className="group absolute bottom-6 flex items-center gap-4 px-2.5 text-amber-100 hover:text-stone-800 focus:text-stone-800"
                   >
-                    <Settings className="h-5 w-5 active:text-foreground" />
+                    <Settings className="h-5 w-5 active:text-foreground group-focus:animate-spin"/>
                     <p className={roboto_mono.className}>Settings</p>
                   </Link>
                 </nav>

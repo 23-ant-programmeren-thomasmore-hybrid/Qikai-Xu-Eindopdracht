@@ -6,12 +6,12 @@ const isBrowser = () => typeof window !== "undefined"; //The approach recommende
 
 function scrollToTop() {
   if (!isBrowser()) return;
-  window.scrollTo({ top: 0, behavior: "smooth" });
+  window.scrollTo({ top: 0, behavior: "smooth"});
 }
 
 export default function ScrollToTopPage() {
   return (
-    <button className="absolute bottom-0 p-10" onClick={scrollToTop}>
+    <button className="relative bottom-0 p-3 animate-bounce" onClick={scrollToTop}>
       <FaArrowUp/>
     </button>
   );

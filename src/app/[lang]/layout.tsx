@@ -4,10 +4,11 @@ import "./globals.css";
 
 import {Locale, i18n} from "../../../i18n.config";
 import Header from "@/components/header";
+import Footer from "@/components/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export async function generateStaticParams() {
+async function generateStaticParams() {
   return i18n.locales.map(locale => ({lang: locale}))
 }
 
@@ -25,9 +26,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang={params.lang}>
-      <body className={inter.className}>
+      <body className={inter.className} suppressHydrationWarning={true}>
         <Header lang={params.lang}/>
         <main>{children}</main>
+        <Footer/>
         </body>
     </html>
   );

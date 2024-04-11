@@ -42,7 +42,7 @@ export default function LocaleSwitcher() {
           <li key={locale}>
             <Link
               href={redirectedPathName(locale)}
-              className="rounded-md border bg-black px-3 py-2 text-white"
+              className="rounded-md border-2 border-red-900/5 bg-red-800/50 px-3 py-2 text-amber-100 uppercase hover:bg-destructive/90"
             >
               {locale}
             </Link>

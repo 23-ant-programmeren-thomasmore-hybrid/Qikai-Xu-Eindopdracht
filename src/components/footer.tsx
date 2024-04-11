@@ -1,6 +1,4 @@
 import Link from "next/link";
-import { Locale } from "../../i18n.config";
-import { getDictionary } from "../dictionaries";
 
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
@@ -19,8 +17,7 @@ export const roboto_mono = Roboto_Mono({
   display: "swap",
 });
 
-export default async function Footer({ lang }: { lang: Locale }) {
-  const { navigation } = await getDictionary(lang);
+export default async function Footer() {
 
   return (
     <main className={roboto_mono.className}>
@@ -63,14 +60,14 @@ export default async function Footer({ lang }: { lang: Locale }) {
             </TooltipProvider>
           </nav>
         </aside>
-        <div className="flex flex-col sm:gap-4 sm:py-4 sm:pl-14 ">
-          <header className="absolute start-0 z-30 flex h-14 items-center gap-4 bg-transparant px-4 sm:static sm:h-auto sm:border-0 sm:bg-transparent sm:px-6">
+        <div className="flex flex-col sm:gap-4 sm:py-4 sm:pl-14">
+          <footer className="absolute start-0 z-30 flex h-14 items-center gap-4 bg-transparant px-4 sm:static sm:h-auto sm:border-0 sm:bg-transparent sm:px-6">
             <Sheet>
               <SheetTrigger asChild>
                 <Button
                   size="icon"
                   variant="destructive"
-                  className="sm:hidden bg-red-800/50 offset"
+                  className="sm:hidden bg-red-800/50 offset text-amber-100"
                 >
                   <PanelLeft className="h-5 w-5 text-amber-100" />
                   <span className="sr-only">Toggle Menu</span>
@@ -82,7 +79,7 @@ export default async function Footer({ lang }: { lang: Locale }) {
               >
                 <nav className="grid gap-6 text-lg font-medium ">
                   <Link
-                    href="#"
+                    href="https://github.com/xQikai"
                     className="absolute bottom-6 left-80 items-center gap-4 px-2.5 text-amber-100 hover:text-stone-800 focus:text-stone-800"
                   >
                     <Github className="h-5 w-5active:text-foreground" />
@@ -121,7 +118,7 @@ export default async function Footer({ lang }: { lang: Locale }) {
                 <DropdownMenuItem>Logout</DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu> */}
-          </header>
+          </footer>
         </div>
       </div>
     </main>

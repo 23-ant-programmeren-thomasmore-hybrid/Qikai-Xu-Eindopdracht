@@ -1,26 +1,162 @@
 {
-    "navigation": {
-           "home": "Home",
-           "about": "About Us"
-       },
-    "page": {
-       "home": {
-         "title": "Home",
-         "description": "Hello there!",
-         "explanation": "On this page, the adventure starts for every visitor.",
-         "howto": "Instructions to implement internationalization."
-       },
-       "about": {
-         "title": "About Us",
-         "description": "A bit about us!"
-       },
-       "projects": {
-        "title": "Projects",
-        "description": "My projects!"
+ "navigation": {
+        "home": "Home",
+        "about": "About Me",
+        "education": "Education",
+        "projects": "Projects",
+        "gallery": "Gallery",
+        "others": "Others",
+        "contact": "Contact",
+        "settings": "Settings"
+ },
+ "page": {
+    "home": {
+      "title": "Home",
+      "description":"Hello there!",
+      "explanation":"Programming student at Thomas More University of Applied Sciences. Keen on learning more about front-end languages and the connection along with the relation between back- and frontend.",
+      "howto": "Instructions to implement internationalization."
+    },
+    "about": {
+      "title": "About Me",
+      "description":"A bit about me!",
+      "introduction1":"When you address me, you will also notice that I am not from Belgium. I have been living here for almost 8 years and before that I lived in different places in the Netherlands for 15 years, but even with all these years here I have not (yet) adopted the Flemish language. However, I am learning more and more the Belgian vocabulary.",
+      "introduction2":"1 thing that always stays the same or in a way always different is how people pronounce my name when they first meet me. To make it a little easier when it comes to my name, remembering the English pronunciation of 'T.K.' suffices. Yet I still hear different creative ways from how people who have known me for a little longer.",
+      "introduction3":"Below are a few technologies that I am already familiar with and keep exanding my knowledge on:"
+    },
+    "education":{
+      "title": "Education",
+      "description":"What I have studied",
+      "explanation1":"In terms of studies, I previously did PBSO, computer science and English at the Karel de Grote - College University in Antwerp. I started this study in 2018 and ended it a few years later. During this period I learned very much in the field of teaching, how to deal with adolescents, how to be informal as well as professional and many other tips and tricks. And now? Programming!",
+      "explanation2":"Below, you are able to find my different educations that I attended in Belgium:",
+      "study1":{
+        "title": "Graduate Degree Programming",
+        "school":"Thomas More University of Applied Sciences",
+        "year":"2022 - Present",
+        "skill1":"Learned over 10 different technologies including, but not limited to Next.Js, JavaScript, HTML, CSS and VirtualBox.",
+        "skill2":"Studied every aspect of being a full-stack developer in class, the workfield and during conferences both about the life and the job itself.",
+        "skill3":"Honed working in groups with dedicated workflows over the course of multiple weeks and during a mock project."
       },
-      "gallery": {
-        "title": "Gallery",
-        "description": "My gallery with curated photos!"
+      "study2":{
+        "title": "Teacher Secondary Education",
+        "school":"Karel de Grote College University",
+        "year":"2018 - 2022",
+        "skill1":"Aquired and advanced my skill to work long hours and under pressure throughout numerous internships where immediate flexibity and adaptability were key.",
+        "skill2":"Improved my expertise in taking notes and making reports during case studies, meetings, observations and feedback moments.",
+        "skill3":"Learned how to communicate information in multiple ways to a diverse audience of different age groups and how to managed them accordingly."
+      },
+      "study3":{
+        "title": "IT management",
+        "school":"KTA Da Vinci Edegem",
+        "year":"2016 - 2018",
+        "skill1":"Studied the ins and outs of a computer and its peripheral devices.",
+        "skill2":"Attained the programmings skills in languages such as HTML, Java, CSS, PHP and SQL.",
+        "skill3":"Programmed a webshop from the ground up with the languages above with purchasing and mailing options."
+      },
+      "study4":{
+        "title": "Business",
+        "school":"KTA Da Vinci Edegem",
+        "year":"2014 - 2016",
+        "skill1":"Practiced and executed every step in starting a business along with 4 others from setting up a business idea to packaging a product for delivery.",
+        "skill2":"Learned how to do the accounting of multiple mock business with practical tools as well as online sites such as Vlajo.",
+        "skill3":"Bettered my reading, writing, speaking and comprehension in 3 languages."
+      },
+      "study5":{
+        "title": "Economics-Mathematics",
+        "school":"OLVE Mortsel",
+        "year":"2014 - 2014",
+        "skill1":"Got familiar with everything that is Belgium.",
+        "skill2":"Got educated on the different school systems, their purpose and level of difficulty.",
+        "skill3":"Got better at my skills in socializing and getting in contact with people of every level of the school system."
       }
+    },
+    "projects": {
+      "title": "Projects",
+      "description":"What I have made",
+      "explanation1":"Throughout my studies, I have completed a number of projects and group assignments. Of these, the most recent projects and the ones I have spent the most time on.",
+      "explanation2":"This allows you to build websites in an easier way and use them for educational or informal purposes.",
+      "project1":{
+        "title": "Snapping S.M.A.K",
+        "description":"This project was a group effort made along with 4 others. We were assigned various front- and backend tasks and were expected to treat it like a real project as well as to log our progress."
+      },
+      "project2":{
+        "title": "Frituur(snack)",
+        "description":"A challenging project with the goal of having a small database of local snackbars in and around Antwerp along with their selection of snacks. It also contained information around allergies and religion around every snack."
+      }
+    },
+    "other": {
+      "title": "Others",
+      "description":"What I have also made",
+      "explanation1":"The websites below were either created using an online tool called Webnode or programmed from scratch using different languages.",
+      "project1":{
+        "title": "Portfolio",
+        "subject":"User Interfaces",
+        "description":"My first simple portfolio web application which I created.",
+        "language1":"HTML",
+        "language2":"CSS",
+        "language3":"Bootstrap"
+      },
+      "project2":{
+        "title": "Photo Gallery",
+        "subject":"Responsive Design",
+        "description":"A responsive website made around my hobby as photographer.",
+        "language1":"HTML",
+        "language2":"CSS",
+        "language3":"Bootstrap"
+      },
+      "project3":{
+        "title": "ILA Web",
+        "subject":"Projects in the workfield",
+        "description":"A modernised scalable version of a webappilication used to for the client department.",
+        "language1":"Angular",
+        "language2":".NET Framework",
+        "language3":"C#"
+      },
+      "project4":{
+        "title": "Portfolio",
+        "subject":"Multimedia",
+        "description":"My first portfolio website made with an online tool.",
+        "language1":"Webnode",
+        "language2":"",
+        "language3":""
+      },
+      "project5":{
+        "title": "Food & Drinks",
+        "subject":"Civilization 2",
+        "description":"Website created to plan and execute a day in and around London about its food culture.",
+        "language1":"Webnode",
+        "language2":"",
+        "language3":""
+      },
+      "project6":{
+        "title": "Future Budgetting",
+        "subject":"Economics",
+        "description":"A four-lesson course about learning how to budget with easy to follow topics and practical steps.",
+        "language1":"Webnode",
+        "language2":"",
+        "language3":""
+      }
+    },
+    "gallery": {
+      "title": "Gallery",
+      "description":"What I have created",
+      "explanation1":"I don't like taking pictures of myself, so you probably won't find many here either.. What I do do is take pictures, of everything. People on the street, flora next to the street, fauna across the street and the street itself. You can find me almost weekly somewhere in city of Antwerp with my camera in hand and focused on finding new or different compositions."
+    },
+    "contact": {
+      "title": "Contact",
+      "description":"Have you got a question?",
+      "explanation1":"Prefer to get in contact with me for a group project or to get a few questions answered? Feel free to fill in the form below.",
+      "username":"Username",
+      "email":"Email address",
+      "message":"Message",
+      "submit":"Submit"
     }
-   }
+ },
+"component": {
+    "greetings":{
+      "greeting1":"Hello, my name is",
+      "greeting2":"Hi, this is",
+      "greeting3":"Greetings, you may call me",
+      "greeting31":""
+    }
+ }
+}
