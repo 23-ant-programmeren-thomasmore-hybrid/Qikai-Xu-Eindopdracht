@@ -11,6 +11,7 @@ import { Button } from "@/components/ui/button";
 import { Download, Send, ChevronDown } from "lucide-react";
 
 import { Roboto, Roboto_Mono } from "next/font/google";
+import EncryptedButton from "@/components/animation/encrypt-button";
 
 const roboto_mono = Roboto_Mono({
   subsets: ["latin"],
@@ -42,9 +43,9 @@ export default async function Hero({
             <p className="mt-6 md:mt-4 text-center xl:text-start">{dict.page.home.explanation}</p>
             <div className="flex flex-col gap-y-3 md:flex-row items-center gap-x-3 mx-auto xl:mx-0 mt-4">
               <Link href="#contact-section">
-                <Button className="rounded-lg bg-red-800/50 hover:bg-amber-100 hover:text-stone-800 text-amber-100 focus:bg-red-800/50 focus:text-stone-800 gap-x-2 ">Contact Me <Send size={18}></Send></Button>
+                <Button className="rounded-lg text-base bg-red-800/50 hover:bg-amber-100 hover:text-stone-800 text-amber-100 focus:bg-red-800/50 focus:text-stone-800 gap-x-2 ">Contact Me <Send size={18}></Send></Button>
               </Link>
-              <Button  className="rounded-lg bg-red-800/50 hover:bg-amber-100 hover:text-stone-800 text-amber-100 focus:bg-red-800/50 focus:text-stone-800 gap-x-2">Download CV <Download size={18}></Download></Button>
+              <EncryptedButton/>
             </div>
           </div>
          
