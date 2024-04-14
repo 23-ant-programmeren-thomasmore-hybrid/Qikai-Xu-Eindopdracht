@@ -3,6 +3,7 @@
 import { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { Download } from "lucide-react";
+import Link from "next/link";
 
 const EncryptedButton = () => {
   return (
@@ -59,10 +60,16 @@ const EncryptButton = () => {
       onMouseLeave={stopScramble}
       className="group relative overflow-hidden h-[40px] gap-x-2 px-4 py-2 transition-colors rounded-lg text-base bg-red-800/50 hover:bg-amber-100 hover:text-stone-800 text-amber-100 focus:bg-red-800/50 focus:text-stone-800"
     >
-      <div className="relative z-10 flex items-center gap-2">
-        <span>{text}</span>
-        <Download size={18}/>
-      </div>
+      <Link
+        href="/images/CurriculumVitae.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <div className="relative flex items-center gap-2">
+          <span>{text}</span>
+          <Download size={18} />
+        </div>
+      </Link>
       <motion.span
         initial={{
           y: "100%",
@@ -76,7 +83,7 @@ const EncryptButton = () => {
           duration: 1,
           ease: "linear",
         }}
-        className="duration-300 absolute inset-0 z-0 scale-125 bg-gradient-to-t from-red-800/0 from-40% via-red-800/100 to-red-800/0 to-60% opacity-0 transition-opacity group-hover:opacity-100"
+        className="duration-300 absolute inset-0 scale-125 bg-gradient-to-t from-red-800/0 from-40% via-red-800/100 to-red-800/0 to-60% opacity-0 transition-opacity group-hover:opacity-100"
       />
     </motion.button>
   );

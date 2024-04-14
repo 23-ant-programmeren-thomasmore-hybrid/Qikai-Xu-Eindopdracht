@@ -26,6 +26,7 @@ import {
 } from "lucide-react";
 
 import { Roboto_Mono } from 'next/font/google';
+import SpringModalButton from "./animation/spring-modal";
 
 export const roboto_mono = Roboto_Mono({
   subsets: ['latin'],
@@ -55,7 +56,7 @@ export default async function Header({ lang }: { lang: Locale }) {
     //       <CustomLink href="#gallery-section" lang={lang}>My second section</CustomLink>
     //       </li>
     //     </ul>
-    //     
+    //
     //   </nav>
     // </header>
     <main className={roboto_mono.className}>
@@ -73,8 +74,8 @@ export default async function Header({ lang }: { lang: Locale }) {
             <TooltipProvider>
               <Tooltip>
                 <TooltipTrigger asChild>
-                <CustomLink
-                    href="/about"
+                  <CustomLink
+                    href="#about-section"
                     lang={lang}
                     className="flex h-9 w-9 items-center justify-center rounded-lg focus:bg-amber-100 focus:text-stone-800 text-amber-100 hover:text-stone-800 md:h-8 md:w-8"
                   >
@@ -86,7 +87,7 @@ export default async function Header({ lang }: { lang: Locale }) {
               </Tooltip>
               <Tooltip>
                 <TooltipTrigger asChild>
-                <CustomLink
+                  <CustomLink
                     href="#education-section"
                     lang={lang}
                     className="flex h-9 w-9 items-center justify-center rounded-lg focus:bg-amber-100 focus:text-stone-800 text-amber-100 hover:text-stone-800 md:h-8 md:w-8"
@@ -95,7 +96,9 @@ export default async function Header({ lang }: { lang: Locale }) {
                     <span className="sr-only">{navigation.education}</span>
                   </CustomLink>
                 </TooltipTrigger>
-                <TooltipContent side="right">{navigation.education}</TooltipContent>
+                <TooltipContent side="right">
+                  {navigation.education}
+                </TooltipContent>
               </Tooltip>
               <Tooltip>
                 <TooltipTrigger asChild>
@@ -108,11 +111,13 @@ export default async function Header({ lang }: { lang: Locale }) {
                     <span className="sr-only">{navigation.projects}</span>
                   </CustomLink>
                 </TooltipTrigger>
-                <TooltipContent side="right">{navigation.projects}</TooltipContent>
+                <TooltipContent side="right">
+                  {navigation.projects}
+                </TooltipContent>
               </Tooltip>
               <Tooltip>
                 <TooltipTrigger asChild>
-                <CustomLink
+                  <CustomLink
                     href="#other-section"
                     lang={lang}
                     className="flex h-9 w-9 items-center justify-center rounded-lg focus:bg-amber-100 focus:text-stone-800 text-amber-100 hover:text-stone-800 md:h-8 md:w-8"
@@ -121,7 +126,9 @@ export default async function Header({ lang }: { lang: Locale }) {
                     <span className="sr-only">{navigation.others}</span>
                   </CustomLink>
                 </TooltipTrigger>
-                <TooltipContent side="right">{navigation.others}</TooltipContent>
+                <TooltipContent side="right">
+                  {navigation.others}
+                </TooltipContent>
               </Tooltip>
               <Tooltip>
                 <TooltipTrigger asChild>
@@ -134,11 +141,13 @@ export default async function Header({ lang }: { lang: Locale }) {
                     <span className="sr-only">{navigation.gallery}</span>
                   </CustomLink>
                 </TooltipTrigger>
-                <TooltipContent side="right">{navigation.gallery}</TooltipContent>
+                <TooltipContent side="right">
+                  {navigation.gallery}
+                </TooltipContent>
               </Tooltip>
               <Tooltip>
                 <TooltipTrigger asChild>
-                <CustomLink
+                  <CustomLink
                     href="#contact-section"
                     lang={lang}
                     className="flex h-9 w-9 items-center justify-center rounded-lg focus:bg-amber-100 focus:text-stone-800 text-amber-100 hover:text-stone-800 md:h-8 md:w-8"
@@ -147,32 +156,30 @@ export default async function Header({ lang }: { lang: Locale }) {
                     <span className="sr-only">{navigation.contact}</span>
                   </CustomLink>
                 </TooltipTrigger>
-                <TooltipContent side="right">{navigation.contact}</TooltipContent>
+                <TooltipContent side="right">
+                  {navigation.contact}
+                </TooltipContent>
               </Tooltip>
             </TooltipProvider>
           </nav>
-          <nav className="mt-auto flex flex-col items-center gap-4 px-2 sm:py-5">
+          <nav className="mt-auto flex flex-col items-center gap-4 px-2 sm:py-1">
             <TooltipProvider>
               <Tooltip>
                 <TooltipTrigger asChild>
-                  <Link
-                    href="#"
-                    className="group flex h-9 w-9 items-center justify-center rounded-lg  focus:bg-amber-100 focus:text-stone-800 text-amber-100 hover:text-stone-800 md:h-8 md:w-8"
-                  >
-                    <Settings className="h-5 w-5 group-focus:animate-spin" />
-                    <span className="sr-only">{navigation.settings}</span>
-                  </Link>
+                  <SpringModalButton/>
                 </TooltipTrigger>
-                <TooltipContent side="right">{navigation.settings}</TooltipContent>
+                <TooltipContent side="right">
+                  {navigation.settings}
+                </TooltipContent>
               </Tooltip>
             </TooltipProvider>
           </nav>
         </aside>
         <div className="flex flex-col sm:gap-4 sm:py-4 sm:pl-14 ">
           <header className="absolute end-0 z-30 flex h-14 items-center gap-4 bg-transparant px-4 sm:static sm:h-auto sm:border-0 sm:bg-transparent sm:px-6">
-          <div className="absolute right-16 top-4 sm:top-6">
-          <LocaleSwitcher />
-        </div>
+            <div className="absolute right-16 top-4 sm:top-6">
+              <LocaleSwitcher />
+            </div>
             <Sheet>
               <SheetTrigger asChild>
                 <Button
@@ -184,7 +191,10 @@ export default async function Header({ lang }: { lang: Locale }) {
                   <span className="sr-only">Toggle Menu</span>
                 </Button>
               </SheetTrigger>
-              <SheetContent side="right" className="sm:max-w-xs w-1/2 bg-red-800/50 border-l-0">
+              <SheetContent
+                side="right"
+                className="sm:max-w-xs w-1/2 bg-red-800/50 border-l-0"
+              >
                 <nav className="grid gap-6 text-lg font-medium">
                   <CustomLink
                     href="/"
@@ -203,12 +213,14 @@ export default async function Header({ lang }: { lang: Locale }) {
                     <p className={roboto_mono.className}>{navigation.about}</p>
                   </CustomLink>
                   <CustomLink
-                    href="#about-section"
+                    href="#education-section"
                     lang={lang}
                     className="flex items-center gap-4 px-2.5 text-amber-100 hover:text-stone-800 focus:text-stone-800"
                   >
                     <BookMarked className="h-5 w-5 active:text-foreground" />
-                    <p className={roboto_mono.className}>{navigation.education}</p>
+                    <p className={roboto_mono.className}>
+                      {navigation.education}
+                    </p>
                   </CustomLink>
                   <CustomLink
                     href="#projects-section"
@@ -216,7 +228,9 @@ export default async function Header({ lang }: { lang: Locale }) {
                     className="flex items-center gap-4 px-2.5 text-amber-100 hover:text-stone-800 focus:text-stone-800"
                   >
                     <FolderOpen className="h-5 w-5 active:text-foreground" />
-                    <p className={roboto_mono.className}>{navigation.projects}</p>
+                    <p className={roboto_mono.className}>
+                      {navigation.projects}
+                    </p>
                   </CustomLink>
                   <CustomLink
                     href="#other-section"
@@ -232,7 +246,9 @@ export default async function Header({ lang }: { lang: Locale }) {
                     className="flex items-center gap-4 px-2.5 text-amber-100 hover:text-stone-800 focus:text-stone-800"
                   >
                     <BookImage className="h-5 w-5 active:text-foreground" />
-                    <p className={roboto_mono.className}>{navigation.gallery}</p>
+                    <p className={roboto_mono.className}>
+                      {navigation.gallery}
+                    </p>
                   </CustomLink>
                   <CustomLink
                     href="#contact-section"
@@ -240,15 +256,18 @@ export default async function Header({ lang }: { lang: Locale }) {
                     className="flex items-center gap-4 px-2.5  text-amber-100 hover:text-stone-800 focus:text-stone-800"
                   >
                     <BookText className="h-5 w-5 active:text-foreground" />
-                    <p className={roboto_mono.className}>{navigation.contact}</p>
+                    <p className={roboto_mono.className}>
+                      {navigation.contact}
+                    </p>
                   </CustomLink>
-      
+
                   <Link
                     href="#"
-                    className="group absolute bottom-6 flex items-center gap-4 px-2.5 text-amber-100 hover:text-stone-800 focus:text-stone-800"
+                    className="group absolute bottom-6 flex items-center gap-4 left-4 pr-2.5 text-amber-100 hover:text-stone-800 focus:text-stone-800"
                   >
-                    <Settings className="h-5 w-5 active:text-foreground group-focus:animate-spin"/>
-                    <p className={roboto_mono.className}>Settings</p>
+                    <SpringModalButton/>
+                    <p className={`${roboto_mono.className}`}>Settings</p>
+                    
                   </Link>
                 </nav>
               </SheetContent>

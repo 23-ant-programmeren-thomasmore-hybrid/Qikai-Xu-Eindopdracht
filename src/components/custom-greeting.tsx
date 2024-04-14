@@ -9,36 +9,53 @@ export default function CustomGreeting() {
     <>
       <span className="flex flex-row items-end text-center xl:text-start">
         <h1 className="text-6xl xl:text-[72px] xl:leading-[80px] tracking-[-2px] font-bold mb-4">Hello, my name is Qikai</h1>
-        <h2 className="text-6xl xl:text-[72px] xl:leading-[80px] tracking-[-2px] font-bold mb-4"></h2>
       </span>
     </>
   );
   const two = (
     <>
       <span className="flex flex-row items-center text-center xl:text-start">
-        <h1 className="text-6xl xl:text-[72px] xl:leading-[80px] tracking-[-2px] font-bold">Hi, this is Qikai</h1>
-        <h2 className="text-6xl xl:h-[160px] xl:text-[72px] xl:leading-[80px] tracking-[-2px] font-bold mb-4"></h2>
+        <h1 className="text-6xl xl:text-[72px] xl:leading-[80px] tracking-[-2px] font-bold">Hoi, ik ben Qikai</h1>
       </span>
     </>
   );
   const three = (
     <>
       <span className="flex flex-row items-end text-center xl:text-start">
-        <h1 className="text-6xl xl:text-[72px] xl:leading-[80px] tracking-[-2px] font-bold mb-4">Greetings, you may call me Qikai</h1>
-        <h2 className="text-6xl xl:text-[72px] xl:leading-[80px] tracking-[-2px] font-bold mb-4"></h2>
+        <h1 className="text-6xl xl:text-[72px] xl:leading-[80px] tracking-[-2px] font-bold mb-4">嗨, 我叫Qikai</h1>
       </span>
     </>
   );
   const four = (
     <>
-      <p>
-        <a></a>
-      </p>
-    </>
+    <span className="flex flex-row items-end text-center xl:text-start">
+      <h1 className="text-6xl xl:text-[72px] xl:leading-[80px] tracking-[-2px] font-bold mb-4">Hi, this is Qikai</h1>
+    </span>
+  </>
   );
-  const five = <a></a>;
+  const five = (
+    <>
+    <span className="flex flex-row items-end text-center xl:text-start">
+      <h1 className="text-6xl xl:text-[72px] xl:leading-[80px] tracking-[-2px] font-bold mb-4">Hallo, mijn naam is Qikai</h1>
+    </span>
+  </>
+  );
+  const six = (
+    <>
+    <span className="flex flex-row items-end text-center xl:text-start">
+      <h1 className="text-6xl xl:text-[72px] xl:leading-[80px] tracking-[-2px] font-bold mb-4">你好， 我的名字是Qikai</h1>
+    </span>
+  </>
+  );
+  const seven = (
+    <>
+    <span className="flex flex-row items-end text-center xl:text-start">
+      <h1 className="text-6xl xl:text-[72px] xl:leading-[80px] tracking-[-2px] font-bold mb-4">Greetings, you may call me Qikai</h1>
+    </span>
+  </>
+  );
 
-  const items = [one, two, three];
+  const items = [one, two, three, four, five, six, seven];
 
   const [currentIndex, setCurrentIndex] = useState(0);
 

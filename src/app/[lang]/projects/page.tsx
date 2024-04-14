@@ -4,6 +4,7 @@ import { Locale } from "../../../../i18n.config";
 import * as React from "react";
 import landscape from "/public/images/landscape.png";
 import mountains from "/public/images/mountains.jpg";
+import background2 from "/public/images/background2.jpg";
 import smak from "/public/images/smak.png";
 import frituursnack from "/public/images/frituursnack.png";
 
@@ -17,9 +18,9 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Car, ExternalLink, Github, Mountain } from "lucide-react";
+import {ExternalLink, Github} from "lucide-react";
 
-import { Roboto_Mono, Roboto  } from 'next/font/google';
+import { Roboto_Mono, Roboto} from 'next/font/google';
 
 const roboto_mono = Roboto_Mono({
   subsets: ['latin'],
@@ -39,16 +40,16 @@ export default async function Projects({
   const dict = await getDictionary(lang); // nl
   return (
     <main
-      className="p-10 px-60"
+      className="p-10 px-60 bg-no-repeat bg-cover"
       style={{
-        backgroundImage: `url(${landscape.src})`,
+        backgroundImage: `url(${background2.src})`,
       }}
     >
       <div className="mx-auto max-w-7xl px-12 sm:px-14 lg:px-16">
         <h1 className={`${roboto_mono.className} text-4xl text-red-900`}>
           {dict.page.projects.title}
         </h1>
-        <h2 className="mb-3 text-stone-800">
+        <h2 className="mb-3">
           {dict.page.projects.description}
         </h2>
         <p className="text-stone-800">{dict.page.projects.explanation1}</p>

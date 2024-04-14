@@ -28,18 +28,19 @@ export default async function Footer() {
               <Tooltip>
                 <TooltipTrigger asChild>
                   <Link
-                    href="#"
-                    className="flex rounded-lg h-24 w-10 justify-center items-center focus:bg-amber-100 focus:text-stone-800 text-amber-100 hover:text-stone-800"
+                    href="https://qikai.be/"
+                    className="flex rounded-lg h-24 w-10 justify-center items-center focus:bg-amber-100 focus:text-stone-800 text-amber-100 lg:text-red-900 hover:text-stone-800"
                   >
                     <p className="-rotate-90 m-4 align-middle">qikai.be</p>
                   </Link>
                 </TooltipTrigger>
+                <TooltipContent side="left">Portfolio</TooltipContent>
               </Tooltip>
               <Tooltip>
                 <TooltipTrigger asChild>
                   <Link
-                    href="#"
-                    className="flex h-9 w-9 items-center justify-center rounded-lg focus:bg-amber-100 focus:text-stone-800 text-amber-100 hover:text-stone-800 md:h-8 md:w-8"
+                    href="https://github.com/xQikai"
+                    className="flex h-9 w-9 items-center justify-center rounded-lg focus:bg-amber-100 focus:text-stone-800 text-amber-100 lg:text-red-900 hover:text-stone-800 md:h-8 md:w-8"
                   >
                     <Github className="h-5 w-5 " />
                   </Link>
@@ -49,8 +50,8 @@ export default async function Footer() {
               <Tooltip>
                 <TooltipTrigger asChild>
                   <Link
-                    href="#"
-                    className="flex h-9 w-9 items-center justify-center rounded-lg focus:bg-amber-100 focus:text-stone-800 text-amber-100 hover:text-stone-800 md:h-8 md:w-8"
+                    href="https://linkedin.com/in/qikai-xu"
+                    className="flex h-9 w-9 items-center justify-center rounded-lg focus:bg-amber-100 focus:text-stone-800 text-amber-100 lg:text-red-900 hover:text-stone-800 md:h-8 md:w-8"
                   >
                     <Linkedin className="h-5 w-5 " />
                   </Link>
@@ -85,7 +86,7 @@ export default async function Footer() {
                     <Github className="h-5 w-5active:text-foreground" />
                   </Link>
                   <Link
-                    href="#"
+                    href="https://linkedin.com/in/qikai-xu"
                     className="absolute bottom-6 right-80 items-center gap-4 px-2.5 text-amber-100 hover:text-stone-800 focus:text-stone-800"
                   >
                     <Linkedin className="h-5 w-5active:text-foreground" />

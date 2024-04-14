@@ -3,6 +3,7 @@ import { Locale } from "../../../../i18n.config";
 
 import Image from "next/image";
 import mountains from "/public/images/mountains.jpg";
+import background2 from "/public/images/background2.jpg";
 import landscape from "/public/images/landscape.png";
 import sunsetting from "/public/images/gallery/IMG_0326.jpg";
 import lookout from "/public/images/gallery/IMG_0387.jpg";
@@ -38,9 +39,9 @@ export default async function Gallery({
   const dict = await getDictionary(lang); // nl
   return (
     <main
-      className="p-10 px-60"
+      className="p-10 px-60 bg-cover"
       style={{
-        backgroundImage: `url(${landscape.src})`,
+        backgroundImage: `url(${background2.src})`,
       }}
     >
       <div className="mx-auto max-w-7xl px-12 sm:px-14 lg:px-16">
@@ -48,7 +49,7 @@ export default async function Gallery({
           {dict.page.gallery.title}
         </h1>
         <h2 className="mb-3">{dict.page.gallery.description}</h2>
-        <p className="text-amber-100">{dict.page.gallery.explanation1}</p>
+        <p className="text-stone-800">{dict.page.gallery.explanation1}</p>
         <div className="flex flex-col lg:flex-row items-center justify-between">
           <Card className="group w-[400px] md:w-full h-1/2 m-2 lg:ml-0 hover:rounded-xl rounded-none border-0 bg-amber-100">
             <Image
