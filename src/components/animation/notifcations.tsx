@@ -40,7 +40,7 @@ const Notification = ({ text, id, removeNotif }: { text:string, id:number, remov
     }, NOTIFICATION_TTL);
 
     return () => clearTimeout(timeoutRef);
-  }, []);
+  }, [id, removeNotif]);
 
   return (
     <motion.div

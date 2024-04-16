@@ -53,7 +53,7 @@ export default async function Other({
                     {dict.page.other.project1.subject}
                   </CardDescription>
                 </div>
-                <a href="https://qikai.be/">
+                <a href="https://qikai.be/" target="_blank">
                   <ExternalLink className="m-0 p-2 pr-0 h-10 w-10 transition-transform group-hover:translate-x-2 group-hover:-translate-y-2 motion-reduce:transform-none"/>
                 </a>
               </div>
@@ -86,7 +86,7 @@ export default async function Other({
                     {dict.page.other.project2.subject}
                   </CardDescription>
                 </div>
-                <a href="https://qikai.be/hobby">
+                <a href="https://qikai.be/hobby" target="_blank">
                   <ExternalLink className="m-0 p-2 pr-0 h-10 w-10 transition-transform group-hover:translate-x-2 group-hover:-translate-y-2 motion-reduce:transform-none" />
                 </a>
               </div>
@@ -152,7 +152,7 @@ export default async function Other({
                     {dict.page.other.project4.subject}
                   </CardDescription>
                 </div>
-                <a href="https://qikai-xu.webnode.nl/">
+                <a href="https://qikai-xu.webnode.nl/" target="_blank">
                   <ExternalLink className="m-0 p-2 pr-0 h-10 w-10 transition-transform group-hover:translate-x-2 group-hover:-translate-y-2 motion-reduce:transform-none"/>
                 </a>
               </div>
@@ -185,7 +185,7 @@ export default async function Other({
                     {dict.page.other.project5.subject}
                   </CardDescription>
                 </div>
-                <a href="https://civilization-2-food-drinks.webnode.nl/">
+                <a href="https://civilization-2-food-drinks.webnode.nl/" target="_blank">
                   <ExternalLink className="m-0 p-2 pr-0 h-10 w-10 transition-transform group-hover:translate-x-2 group-hover:-translate-y-2 motion-reduce:transform-none"/>
                 </a>
               </div>
@@ -218,7 +218,7 @@ export default async function Other({
                     {dict.page.other.project6.subject}
                   </CardDescription>
                 </div>
-                <a href="https://toekomstig-budgetteren.webnode.be/">
+                <a href="https://toekomstig-budgetteren.webnode.be/" target="_blank">
                   <ExternalLink className="m-0 p-2 pr-0 h-10 w-10 transition-transform group-hover:translate-x-2 group-hover:-translate-y-2 motion-reduce:transform-none"/>
                 </a>
               </div>

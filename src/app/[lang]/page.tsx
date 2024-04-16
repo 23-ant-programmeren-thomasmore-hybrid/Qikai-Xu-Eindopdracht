@@ -1,7 +1,5 @@
-import Image from "next/image";
 import { getDictionary } from "../../dictionaries";
 import { Locale } from "../../../i18n.config";
-import Link from "next/link";
 import ScrollToTopPage from "@/components/scrollReset";
 import Hero from "./hero/page";
 import About from "./about/page";
@@ -10,8 +8,6 @@ import Projects from "./projects/page";
 import Education from "./education/page";
 import Other from "./other/page";
 import Contact from "./contact/page";
-
-import vercel from "/public/vercel.svg";
 
 import { Roboto_Mono, Roboto } from "next/font/google";
 
@@ -33,10 +29,10 @@ export default async function Home({
   const dict = await getDictionary(lang); // nl
   return (
     <main className={roboto.className}>
-      <div className="flex overflow-hidden min-h-screen flex-col items-center justify-between p-4 pb-0">
+      <div className="flex overflow-hidden min-h-screen flex-col items-center justify-between p-4 pb-0 bg-stone-900/50">
         <section
           id="hero-section"
-          className="max-w-4xl w-screen h-screen items-center justify-center text-xl bg-black lg:flex lg:-mt-12"
+          className="max-w-4xl w-screen h-screen items-center justify-center text-xl lg:flex lg:-mt-12"
         >
           <Hero
             params={{

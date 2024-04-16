@@ -2,9 +2,7 @@ import { getDictionary } from "../../../dictionaries";
 import { Locale } from "../../../../i18n.config";
 
 import Image from "next/image";
-import mountains from "/public/images/mountains.jpg";
 import background2 from "/public/images/background2.jpg";
-import landscape from "/public/images/landscape.png";
 import sunsetting from "/public/images/gallery/IMG_0326.jpg";
 import lookout from "/public/images/gallery/IMG_0387.jpg";
 import vibes from "/public/images/gallery/IMG_0406.jpg";

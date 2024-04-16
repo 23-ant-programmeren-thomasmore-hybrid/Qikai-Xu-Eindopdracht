@@ -1,14 +1,11 @@
 import { getDictionary } from "../../../dictionaries";
 import { Locale } from "../../../../i18n.config";
 
-import mountains from "/public/images/mountains.jpg";
-import hero from "/public/images/hero-image.jpg";
-import squarechat from "/public/images/squarechat.svg";
 import CustomGreeting from "@/components/custom-greeting";
 
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Download, Send, ChevronDown } from "lucide-react";
+import { Send, ChevronDown } from "lucide-react";
 
 import { Roboto, Roboto_Mono } from "next/font/google";
 import EncryptedButton from "@/components/animation/encrypt-button";

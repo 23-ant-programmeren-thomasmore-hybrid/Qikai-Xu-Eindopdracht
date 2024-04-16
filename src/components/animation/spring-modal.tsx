@@ -1,14 +1,16 @@
 "use client"
 import { AnimatePresence, motion } from "framer-motion";
-import { FiAlertCircle } from "react-icons/fi";
 import { useState } from "react";
 import { EggFried, Settings } from "lucide-react";
 import SlideInNotifications from "./notifcations";
 
-const SpringModalButton = () => {
+import React, { forwardRef } from 'react';
+
+
+const SpringModalButton = forwardRef<HTMLDivElement>((props, ref) => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="mt-auto flex flex-col items-center gap-4 pl-2 pr-0 lg:px-2 sm:py-4">
+    <div ref={ref} className="mt-auto flex flex-col items-center gap-4 pl-2 pr-0 lg:px-2 sm:py-4">
       <button
         onClick={() => setIsOpen(true)}
         className="group flex h-9 w-9 items-center justify-center rounded-lg  focus:bg-amber-100 focus:text-stone-800 text-amber-100 hover:text-stone-800 md:h-8 md:w-8"
@@ -18,7 +20,9 @@ const SpringModalButton = () => {
       <SpringModal isOpen={isOpen} setIsOpen={setIsOpen} />
     </div>
   );
-};
+});
+
+SpringModalButton.displayName = 'SpringModalButton';
 
 const SpringModal = ({ isOpen, setIsOpen }: any) => {
   return (

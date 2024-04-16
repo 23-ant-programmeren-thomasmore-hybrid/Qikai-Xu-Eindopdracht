@@ -2,8 +2,6 @@ import { getDictionary } from "../../../dictionaries";
 import { Locale } from "../../../../i18n.config";
 
 import * as React from "react";
-import landscape from "/public/images/landscape.png";
-import mountains from "/public/images/mountains.jpg";
 import background2 from "/public/images/background2.jpg";
 import smak from "/public/images/smak.png";
 import frituursnack from "/public/images/frituursnack.png";
@@ -96,10 +94,10 @@ export default async function Projects({
                 </CardDescription>
               </CardFooter>
               <div className="pl-6 pt-4 pb-2 flex flex-row">
-                <a href="https://github.com/22-project-programmeren-thomasmore/Snapping-S.M.A.K.">
+                <a href="https://github.com/22-project-programmeren-thomasmore/Snapping-S.M.A.K." target="_blank">
                   <Github className="m-0 p-2 pl-0 h-10 w-10 transition-transform group-hover:scale-110 hover:text-red-900 motion-reduce:transform-none"/>
                 </a>
-                <a href="https://snapping-smak.onrender.com/">
+                <a href="https://snapping-smak.onrender.com/" target="_blank">
                   <ExternalLink className="m-0 p-2 h-10 w-10 transition-transform group-hover:scale-110 hover:text-red-900 motion-reduce:transform-none"/>
                 </a>
               </div>
@@ -149,10 +147,10 @@ export default async function Projects({
                 </CardDescription>
               </CardFooter>
               <div className="pl-6 pt-4 pb-2 flex flex-row">
-              <a href="https://github.com/xQikai/frituur-snack">
+              <a href="https://github.com/xQikai/frituur-snack" target="_blank">
                   <Github className="m-0 p-2 pl-0 h-10 w-10 transition-transform group-hover:scale-110 hover:text-red-900 motion-reduce:transform-none"/>
                 </a>
-                <a href="https://frituur-snack.onrender.com/">
+                <a href="https://frituur-snack.onrender.com/" target="_blank">
                   <ExternalLink className="m-0 p-2 h-10 w-10 transition-transform group-hover:scale-110 hover:text-red-900 motion-reduce:transform-none"/>
                 </a>
               </div>
@@ -198,10 +196,10 @@ export default async function Projects({
                 </CardDescription>
               </CardFooter>
               <div className="pl-6 pt-4 flex flex-row">
-                <a href="https://github.com/22-project-programmeren-thomasmore/Snapping-S.M.A.K.">
+                <a href="https://github.com/22-project-programmeren-thomasmore/Snapping-S.M.A.K." target="_blank">
                   <Github className="m-0 p-2 pl-0 h-10 w-10 transition-transform group-hover:scale-110 hover:text-red-900 motion-reduce:transform-none"/>
                 </a>
-                <a href="https://snapping-smak.onrender.com/">
+                <a href="https://snapping-smak.onrender.com/" target="_blank">
                   <ExternalLink className="m-0 p-2 h-10 w-10 transition-transform group-hover:scale-110 hover:text-red-900 motion-reduce:transform-none"/>
                 </a>
               </div>
@@ -212,7 +210,7 @@ export default async function Projects({
               }}
               className="rounded-none grayscale hover:grayscale-0 hover:rounded-xl ease-in-out border-0"
             >
-              <a href="https://snapping-smak.onrender.com/">
+              <a href="https://snapping-smak.onrender.com/" target="_blank">
                 <Image
                   className="w-[750px] h-full rounded-none grayscale hover:grayscale-0 hover:rounded-xl ease-in-out "
                   src={smak}
@@ -231,7 +229,7 @@ export default async function Projects({
               }}
               className="rounded-none grayscale hover:grayscale-0 hover:rounded-xl ease-in-out border-0"
             >
-              <a href="https://frituur-snack.onrender.com/">
+              <a href="https://frituur-snack.onrender.com/" target="_blank">
                 <Image
                   className="w-[750px] rounded-none grayscale hover:grayscale-0 hover:rounded-xl ease-in-out "
                   src={frituursnack}
@@ -276,10 +274,10 @@ export default async function Projects({
                 </CardDescription>
               </CardFooter>
               <div className="pl-6 pt-4 flex flex-row">
-                <a href="https://github.com/xQikai/frituur-snack">
+                <a href="https://github.com/xQikai/frituur-snack" target="_blank">
                   <Github className="m-0 p-2 pl-0 h-10 w-10 transition-transform group-hover:scale-110 hover:text-red-900 motion-reduce:transform-none"/>
                 </a>
-                <a href="https://frituur-snack.onrender.com/">
+                <a href="https://frituur-snack.onrender.com/" target="_blank">
                   <ExternalLink className="m-0 p-2 h-10 w-10 transition-transform group-hover:scale-110 hover:text-red-900 motion-reduce:transform-none"/>
                 </a>
               </div>

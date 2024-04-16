@@ -21,7 +21,6 @@ import {
   Home,
   PackageOpen,
   PanelRight,
-  Settings,
   User2
 } from "lucide-react";
 
@@ -37,30 +36,8 @@ export default async function Header({ lang }: { lang: Locale }) {
   const { navigation } = await getDictionary(lang);
 
   return (
-    // <header className='py-6'>
-    //   <nav className='container flex items-center justify-between'>
-    //     <ul className='flex gap-x-8'>
-    //       <li>
-    //         <CustomLink href='/' lang={lang}>{navigation.home}</CustomLink>
-    //       </li>
-    //       <li>
-    //         <CustomLink href='/about' lang={lang}>{navigation.about}</CustomLink>
-    //       </li>
-    //       <li>
-    //       <CustomLink href="#about-section" lang={lang}>My first section</CustomLink>
-    //       </li>
-    //       <li>
-    //       <CustomLink href="#projects-section" lang={lang}>My second section</CustomLink>
-    //       </li>
-    //       <li>
-    //       <CustomLink href="#gallery-section" lang={lang}>My second section</CustomLink>
-    //       </li>
-    //     </ul>
-    //
-    //   </nav>
-    // </header>
     <main className={roboto_mono.className}>
-      <div className="flex  w-full flex-col ">
+      <div className="flex  w-full flex-col bg-stone-900/50">
         <aside className="fixed inset-y-0 right-0 z-10 hidden w-14 flex-col border-r bg-red-800/50 sm:flex">
           <nav className="flex flex-col items-center gap-4 px-2 sm:py-5">
             <CustomLink

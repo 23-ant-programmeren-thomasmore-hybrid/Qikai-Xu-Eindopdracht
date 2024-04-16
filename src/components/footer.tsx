@@ -21,7 +21,7 @@ export default async function Footer() {
 
   return (
     <main className={roboto_mono.className}>
-      <div className="flex  w-full flex-col ">
+      <div className="flex  w-full flex-col bg-stone-900/50">
         <aside className="fixed inset-y-0 left-0 z-10 hidden w-14 flex-col bg-transparant sm:flex">
           <nav className="mt-auto flex flex-col items-center gap-4 px-2 sm:py-5">
             <TooltipProvider>
@@ -29,6 +29,7 @@ export default async function Footer() {
                 <TooltipTrigger asChild>
                   <Link
                     href="https://qikai.be/"
+                    target="_blank"
                     className="flex rounded-lg h-24 w-10 justify-center items-center focus:bg-amber-100 focus:text-stone-800 text-amber-100 lg:text-red-900 hover:text-stone-800"
                   >
                     <p className="-rotate-90 m-4 align-middle">qikai.be</p>
@@ -40,6 +41,7 @@ export default async function Footer() {
                 <TooltipTrigger asChild>
                   <Link
                     href="https://github.com/xQikai"
+                    target="_blank"
                     className="flex h-9 w-9 items-center justify-center rounded-lg focus:bg-amber-100 focus:text-stone-800 text-amber-100 lg:text-red-900 hover:text-stone-800 md:h-8 md:w-8"
                   >
                     <Github className="h-5 w-5 " />
@@ -51,6 +53,7 @@ export default async function Footer() {
                 <TooltipTrigger asChild>
                   <Link
                     href="https://linkedin.com/in/qikai-xu"
+                    target="_blank"
                     className="flex h-9 w-9 items-center justify-center rounded-lg focus:bg-amber-100 focus:text-stone-800 text-amber-100 lg:text-red-900 hover:text-stone-800 md:h-8 md:w-8"
                   >
                     <Linkedin className="h-5 w-5 " />
@@ -81,12 +84,14 @@ export default async function Footer() {
                 <nav className="grid gap-6 text-lg font-medium ">
                   <Link
                     href="https://github.com/xQikai"
+                    target="_blank"
                     className="absolute bottom-6 left-80 items-center gap-4 px-2.5 text-amber-100 hover:text-stone-800 focus:text-stone-800"
                   >
                     <Github className="h-5 w-5active:text-foreground" />
                   </Link>
                   <Link
                     href="https://linkedin.com/in/qikai-xu"
+                    target="_blank"
                     className="absolute bottom-6 right-80 items-center gap-4 px-2.5 text-amber-100 hover:text-stone-800 focus:text-stone-800"
                   >
                     <Linkedin className="h-5 w-5active:text-foreground" />
