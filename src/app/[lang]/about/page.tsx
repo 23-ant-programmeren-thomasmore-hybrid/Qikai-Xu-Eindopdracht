@@ -91,18 +91,7 @@ export default async function About({
             </div>
           </div>
         </div>
-        <HoverTilt/>{/* 336px */}
-        {/* <div className="flex-col lg:w-screen justify-center lg:justify-normal mt-5 lg:mt-0 ">
-          <div className="flex lg:relative justify-center lg:justify-normal "> 
-            <div className="border-0 bg-red-900 z-0 h-[230px] w-[160px] md:h-[346px] md:w-[241px] lg:h-[548px] lg:w-[363px]  bg-no-repeat absolute bottom-22 lg:-bottom-14 lg:left-28 rounded-xl"></div>
-            <Image //260px
-              className="transition z-10 h-[220px] md:h-[330px] lg:h-[500px] w-auto lg:relative lg:-bottom-8 lg:left-32 rounded-xl grayscale hover:grayscale-0 hover:scale-110 ease-in-out"
-              src={hero}
-              priority
-              alt="Hero Image"
-            />
-          </div>
-        </div> */}
+        <HoverTilt/>
       </div>
     </main>
   );

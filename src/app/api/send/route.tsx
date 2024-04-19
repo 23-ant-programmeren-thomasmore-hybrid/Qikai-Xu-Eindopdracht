@@ -10,7 +10,7 @@ export async function GET() {
       to: ['r0953902@student.thomasmore.be'],
       subject: 'Hello world',
       html: "",
-      react: EmailTemplate({ userName: "" , email: "", message: ""}),
+      react: EmailTemplate({ userName: "Qikai", email: "johndoe@hotmail.com", message: "Hello World!"}),
     });
 
     return Response.json({data});

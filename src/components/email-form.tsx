@@ -3,15 +3,14 @@ import { Locale } from "../../i18n.config";
 import {EmailTemplate} from "../components/email-template";
 import { Resend } from "resend";
 
-const resend = new Resend("re_4VqX3hhG_M5p9PEurN5KbtwpcDujznJpj");
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 async function send(formData: FormData) {
     'use server'
     const userName = formData.get("userName") as string
     const email = formData.get("email") as string
     const message = formData.get("message") as string
-    
-    const resend = new Resend(process.env.RESEND_API_KEY);
+
     const data = await resend.emails.send({
         from: 'Portfolio <noreply@qikai.be>',
         to: 'r0953902@student.thomasmore.be',
@@ -19,8 +18,9 @@ async function send(formData: FormData) {
         html: "",
         react: EmailTemplate({userName, email, message}),
       });
-    console.log(userName, email, message, data)
+    console.log(userName, email, message, data);
 }
+
 export default async function EmailForm({
     params: { lang },
   }: {

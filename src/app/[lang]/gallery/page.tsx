@@ -54,7 +54,7 @@ export default async function Gallery({
               src={vibes}
               width={600}
               height={600}
-              alt="Picture of the author"
+              alt="A glowing bottle of booze set on a blanket overlooking the Schelde"
               className="transition hover:rounded-xl hover:scale-110 ease-in-out"
             />
           </Card>
@@ -63,7 +63,7 @@ export default async function Gallery({
               src={misty}
               width={600}
               height={600}
-              alt="Picture of the author"
+              alt="A neon Ferris wheel during a misty night"
               className="transition hover:rounded-xl hover:scale-110 ease-in-out"
             />
           </Card>
@@ -74,7 +74,7 @@ export default async function Gallery({
               src={fisheye}
               width={600}
               height={600}
-              alt="Picture of the author"
+              alt="A reflection of a rounded street mirror"
               className="transition hover:rounded-xl hover:scale-110 ease-in-out"
             />
           </Card>
@@ -83,7 +83,7 @@ export default async function Gallery({
               src={lookout}
               width={600}
               height={600}
-              alt="Picture of the author"
+              alt="A man with his camera looking for a composition"
               className="transition hover:rounded-xl hover:scale-110 ease-in-out"
             />
           </Card>
@@ -92,7 +92,7 @@ export default async function Gallery({
               src={datenight}
               width={600}
               height={600}
-              alt="Picture of the author"
+              alt="A couple having dinner together in a moody setting"
               className="transition hover:rounded-xl hover:scale-110 ease-in-out"
             />
           </Card>
@@ -103,7 +103,7 @@ export default async function Gallery({
               src={attention}
               width={600}
               height={600}
-              alt="Picture of the author"
+              alt="A child on his fathers shoulders trying to get his mothers attention"
               className="transition hover:rounded-xl hover:scale-110 ease-in-out"
             />
           </Card>
@@ -112,7 +112,7 @@ export default async function Gallery({
               src={chilling}
               width={600}
               height={600}
-              alt="Picture of the author"
+              alt="A man in a matching outfit sitting on top of a wall hanging out"
               className="transition hover:rounded-xl hover:scale-110 ease-in-out"
             />
           </Card>
@@ -123,7 +123,7 @@ export default async function Gallery({
               src={foodfest}
               width={600}
               height={600}
-              alt="Picture of the author"
+              alt="A woman eating during golden hour while attending a food festival"
               className="transition hover:rounded-xl hover:scale-110 ease-in-out"
             />
           </Card>
@@ -132,7 +132,7 @@ export default async function Gallery({
               src={bloemenmarkt}
               width={600}
               height={600}
-              alt="Picture of the author"
+              alt="A rack of clogs in the back of a flower shop in the Bloemenmarkt"
               className="transition hover:rounded-xl hover:scale-110 ease-in-out"
             />
           </Card>
@@ -141,7 +141,7 @@ export default async function Gallery({
               src={laundryday}
               width={600}
               height={600}
-              alt="Picture of the author"
+              alt="A woman waiting for her laundry to be done late at night"
               className="transition hover:rounded-xl hover:scale-110 ease-in-out"
             />
           </Card>
@@ -152,7 +152,7 @@ export default async function Gallery({
               src={sunsetting}
               width={600}
               height={600}
-              alt="Picture of the author"
+              alt="A sunset on the Stadsfeestzaal in Antwerp"
               className="transition hover:rounded-xl hover:scale-110 ease-in-out"
             />
           </Card>
@@ -161,7 +161,7 @@ export default async function Gallery({
               src={summertime}
               width={600}
               height={600}
-              alt="Picture of the author"
+              alt="A minimalistic photo of the Onze-Lieve-Vrouwekathedraal"
               className="transition hover:rounded-xl hover:scale-110 ease-in-out"
             />
           </Card>
